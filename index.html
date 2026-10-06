@@ -6,23 +6,35 @@
 
   <title>BML - Cricket Tips</title>
 
-  <!-- Meta Pixel -->
+  <!-- META PIXEL -->
   <script>
     !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;
-    n.push=n;
-    n.loaded=!0;
-    n.version='2.0';
-    n.queue=[];
-    t=b.createElement(e);
-    t.async=!0;
-    t.src=v;
-    s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)
-    }(window, document, 'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    {
+      if(f.fbq)return;
+      n=f.fbq=function(){
+        n.callMethod ?
+        n.callMethod.apply(n,arguments) :
+        n.queue.push(arguments)
+      };
+
+      if(!f._fbq)f._fbq=n;
+      n.push=n;
+      n.loaded=!0;
+      n.version='2.0';
+      n.queue=[];
+
+      t=b.createElement(e);
+      t.async=!0;
+      t.src=v;
+
+      s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)
+    }(
+      window,
+      document,
+      'script',
+      'https://connect.facebook.net/en_US/fbevents.js'
+    );
 
     fbq('init', '3188872821317437');
     fbq('track', 'PageView');
@@ -39,9 +51,9 @@
 
   <style>
     * {
-      box-sizing: border-box;
       margin: 0;
       padding: 0;
+      box-sizing: border-box;
     }
 
     body {
@@ -52,10 +64,10 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      padding: 25px;
+      padding: 24px;
     }
 
-    .page {
+    .container {
       width: 100%;
       max-width: 480px;
       text-align: center;
@@ -63,41 +75,41 @@
 
     .top {
       font-size: 14px;
-      color: #aaaaaa;
+      color: #999999;
       letter-spacing: 2px;
-      margin-bottom: 25px;
+      margin-bottom: 22px;
     }
 
     h1 {
-      font-size: 38px;
-      line-height: 1.15;
-      margin-bottom: 15px;
+      font-size: 46px;
+      font-weight: 800;
+      margin-bottom: 12px;
     }
 
     .subtitle {
-      color: #bbbbbb;
-      font-size: 17px;
-      line-height: 1.6;
-      margin-bottom: 30px;
+      color: #bdbdbd;
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 28px;
     }
 
-    .box {
+    .features {
       background: #121212;
       border: 1px solid #292929;
       border-radius: 16px;
-      padding: 22px;
-      margin-bottom: 28px;
+      padding: 8px 20px;
+      margin-bottom: 25px;
       text-align: left;
     }
 
-    .item {
+    .feature {
+      padding: 16px 0;
       font-size: 16px;
-      padding: 13px 0;
-      border-bottom: 1px solid #292929;
       color: #eeeeee;
+      border-bottom: 1px solid #292929;
     }
 
-    .item:last-child {
+    .feature:last-child {
       border-bottom: none;
     }
 
@@ -106,20 +118,85 @@
       width: 100%;
       background: #ffffff;
       color: #000000;
-      padding: 18px 10px;
-      border-radius: 12px;
       text-decoration: none;
+      padding: 18px;
+      border-radius: 12px;
       font-size: 18px;
-      font-weight: bold;
-      margin-top: 10px;
+      font-weight: 700;
+      margin-bottom: 20px;
     }
 
-    .join-button:hover {
-      opacity: 0.85;
+    .join-button:active {
+      transform: scale(0.98);
     }
 
-    .small {
+    .disclaimer {
       color: #777777;
       font-size: 12px;
-      margin-top: 20px;
-      line-height:
+      line-height: 1.5;
+    }
+
+    .footer {
+      color: #555555;
+      font-size: 12px;
+      margin-top: 22px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="top">
+      🏏 CRICKET TIPS
+    </div>
+
+    <h1>BML</h1>
+
+    <div class="subtitle">
+      Cricket Tips, Match Analysis &amp; Market Updates
+    </div>
+
+    <div class="features">
+
+      <div class="feature">
+        🏏 Cricket Match Analysis
+      </div>
+
+      <div class="feature">
+        📊 Market Updates
+      </div>
+
+      <div class="feature">
+        🔥 Cricket Tips
+      </div>
+
+      <div class="feature">
+        ⚡ Fast Match Updates
+      </div>
+
+    </div>
+
+    <a
+      class="join-button"
+      href="https://t.me/+dgu2hll3IwxiZDZl"
+      target="_blank"
+      rel="noopener noreferrer"
+      onclick="fbq('track', 'Subscribe');"
+    >
+      ✈️ JOIN TELEGRAM NOW
+    </a>
+
+    <div class="disclaimer">
+      Cricket information and analysis for informational purposes only.
+    </div>
+
+    <div class="footer">
+      © 2026 BML
+    </div>
+
+  </div>
+
+</body>
+</html>
